@@ -10,12 +10,16 @@ namespace test_console
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
-            Console.Write("Введите >");
-            String str = Console.ReadLine();
-            Console.WriteLine("Введено:" + str);
-            Console.ReadLine();                
+            Console.Write("Введите x>");
+            string x_str = Console.ReadLine();
+            Console.Write("Введите y>");
+            string y_str = Console.ReadLine();
+            int x = int.Parse(x_str);
+            int y = int.Parse(y_str);
+            int z = x + y;
+            Console.WriteLine($"{x}+{y}={z}");
+
+
                 }
     }
 }
